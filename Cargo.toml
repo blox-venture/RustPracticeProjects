@@ -1,0 +1,23 @@
+[workspace]
+members = [
+    "actix-gcd",
+    "gcd",
+    "mandelbrot",
+    "quickreplace",
+]
+
+resolver = "2"
+
+[workspace.package]
+version                     = "0.1.0"
+edition                     = "2021"
+description                 = "A collection of Rust practice projects"
+authors                     = ["Usama Ali <aliusama481@yahoo.com>"]
+
+[workspace.dependencies]
+
+# local crates
+actix-gcd                       = { path = "actix-gcd" }
+gcd                             = { path = "gcd" }
+mandelbrot                      = { path = "mandelbrot" }
+quickreplace                    = { path = "quickreplace" }
